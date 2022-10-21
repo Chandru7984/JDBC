@@ -13,13 +13,13 @@ public class HospitalServiceImpl implements HospitalService {
 		String founder = dto.getFounder();
 		String specialist = dto.getSpecialist();
 		int since = dto.getSince();
-		if (id > 5 && id < 50000) {
+		if (id > 0 && id < 100) {
 			System.out.println("it is valid");
 			if (name != null && name.length() > 3 && name.length() < 50) {
 				System.out.println("it is valid");
-				if (founder != null && founder.length() > 3 && founder.length() < 50) {
+				if (founder != null && founder.length() > 2 && founder.length() < 50) {
 					System.out.println("it is valid");
-					if (specialist != null && specialist.length() > 3 && specialist.length() < 50) {
+					if (specialist != null && specialist.length() > 2 && specialist.length() < 50) {
 						System.out.println("it is valid");
 						if (since > 1900 && since < 2022) {
 							System.out.println("it is valid");
